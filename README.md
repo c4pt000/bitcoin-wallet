@@ -1,5 +1,9 @@
 # BITCOIN WALLET
 
+* requires maven, ant, java8, gradle6.2, android sdk in path
+* sh build.sh
+
+
 Welcome to _Bitcoin Wallet_, a standalone Bitcoin payment app for your Android device!
 
 This project contains several sub-projects:
