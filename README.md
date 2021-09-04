@@ -1,5 +1,22 @@
 # BITCOIN WALLET
+```
+For generic skin emulator with default apis (without google apis):
 
+List All System Images Available for Download: sdkmanager --list | grep system-images
+
+Download Image: sdkmanager --install "system-images;android-29;default;x86"
+
+Create Emulator: echo "no" | avdmanager --verbose create avd --force --name "generic_10" --package "system-images;android-29;default;x86" --tag "default" --abi "x86"
+
+I recommend adding these lines to: ~/.android/avd/generic_10.avd/config.ini
+
+skin.name=1080x1920        # proper screen size for emulator
+hw.lcd.density=480
+hw.keyboard=yes            # enables keys from your laptop to be sent to the emulator
+
+If you cannot do this, you can still pass -skin 1080x1920 as an argument when starting the emulator. 
+Run Emulator: emulator @generic_10 &
+```
 * requires maven, ant, java8, gradle6.2, android sdk in path
 * sh build.sh
 
