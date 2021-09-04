@@ -17,6 +17,11 @@ hw.keyboard=yes            # enables keys from your laptop to be sent to the emu
 If you cannot do this, you can still pass -skin 1080x1920 as an argument when starting the emulator. 
 Run Emulator: emulator @generic_10 &
 ```
+
+to resize tmp to 8G
+```
+sudo mount -o remount,size=8G,noatime /tmp;
+```
 * requires maven, ant, java8, gradle6.2, android sdk in path
 * sh build.sh
 
